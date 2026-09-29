@@ -33,6 +33,45 @@
 
         <!-- Main Content -->
         <main class="main-content">
+            <section class="products-section">
+    <h2>Products</h2>
+    
+
+    <input
+        type="text"
+        id="search-input"
+        placeholder="Search products..."
+    >
+
+    <div id="category-tabs">
+        <button data-category="all">All</button>
+        <button data-category="electronics">Electronics</button>
+        <button data-category="jewelery">Jewelry</button>
+        <button data-category="men's clothing">Men's Clothing</button>
+        <button data-category="women's clothing">Women's Clothing</button>
+    </div>
+    <select id="sort-select">
+    <option value="default">Sort By</option>
+    <option value="price-low">Price: Low to High</option>
+    <option value="price-high">Price: High to Low</option>
+    <option value="name-az">Name: A to Z</option>
+    <option value="name-za">Name: Z to A</option>
+</select>
+<div id="error-banner" class="error-banner" role="alert"></div>
+
+   <div id="loading-skeleton" class="loading-skeleton">
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+</div>
+
+<div id="products-container"></div>
+  
+
+
+
+</section>
 
             <!-- Welcome Section -->
             <section class="welcome-section">
